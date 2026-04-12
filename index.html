@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sohailaelnagdy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sohaila</a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link">Journey</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="imag.jpeg" alt="Zezo Profile">
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Sohailaelnagdy</span></h1>
+                <div class="animated-text">
+                    <span class="text-animate" id="animated-text"></span>
+                </div>
+                <p class="hero-description">Passionate about creating digital experiences and turning data into insights</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#" class="btn btn-outline">Download CV</a>
+                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                    
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        <!-- <video autoplay muted loop>
+    <source src="background.mp4" type="video/mp4"> -->
+    </section>
+
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Data Analyst with a strong interest in transforming raw data into meaningful insights. With over 3 years of experience, I specialize in data analysis, visualization, and uncovering trends that support smart decision-making.</p>
+
+                    <p>My journey began with a curiosity for patterns and data-driven thinking, which led me to master tools like Excel, SQL, Python, and data visualization platforms. I believe in the power of clean data, clear insights, and impactful storytelling.</p>
+
+                    <p>When I'm not analyzing data, you can find me exploring new analytical techniques, working on real-world datasets, or studying market trends to deliver valuable insights.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="3">0</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="9">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Data Analysis Skills</h2>
+                <p class="section-subtitle">Tools & Technologies I use for data analysis</p>
+            </div>
+    
+            <div class="skills-grid">
+    
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3 class="skill-name">Excel</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+    
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+    
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+    
+                <div class="skill-card" data-skill="75">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="skill-name">Data Visualization</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+    
+                <div class="skill-card" data-skill="70">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="skill-name">Power BI / Tableau</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+    
+                <div class="skill-card" data-skill="65">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-name">Statistics & Data Cleaning</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="65"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&w=500" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">A fully responsive e-commerce website built with modern web technologies.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Data Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">Interactive dashboard for data visualization and business intelligence.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">Modern and responsive portfolio website with smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Vanilla JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mobile App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Cross-platform mobile application for productivity and task management.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Data Science Journey</h2>
+                <p class="section-subtitle">Education, Projects & Experience</p>
+            </div>
+    
+            <div class="timeline-container">
+    
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Bachelor in Artificial Intelligence</h3>
+                        <span class="timeline-date">2023 - 2027</span>
+                        <p class="timeline-description">
+                            Studying Artificial Intelligence with a focus on data science, machine learning, and data analysis.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">First Data Analysis Project</h3>
+                        <span class="timeline-date">2023</span>
+                        <p class="timeline-description">
+                            Analyzed real-world datasets using Excel and Python to uncover insights and visualize trends.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Data Analysis & Visualization Training</h3>
+                        <span class="timeline-date">2023 - 2024</span>
+                        <p class="timeline-description">
+                            Gained hands-on experience in SQL, Power BI, and data visualization techniques for business insights.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Freelance Data Analyst</h3>
+                        <span class="timeline-date">2024 - Present</span>
+                        <p class="timeline-description">
+                            Working on freelance projects involving data cleaning, analysis, and building dashboards to support decision-making.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What clients say about my work</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <p>"SOSO delivered an exceptional website that exceeded our expectations. His attention to detail and technical expertise are outstanding."</p>
+                        <div class="testimonial-author">
+                            <img src="https://de.web.img3.acsta.net/r_654_368/img/18/e1/18e13346c909bdeaecd4d422c43b8c72.jpg" alt="Client 1">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"The data analysis insights SOSO provided helped us make crucial business decisions. Highly professional and reliable."</p>
+                        <div class="testimonial-author">
+                            <img src="https://e1.pxfuel.com/desktop-wallpaper/127/206/desktop-wallpaper-teen-wolf-allison-argent-and-crystal-reed-allison-argent.jpg" alt="Client 2">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Working with SOSO was a pleasure. The project was delivered on time with excellent communication throughout."</p>
+                        <div class="testimonial-author">
+                            <img src="https://media.filfan.com/NewsPics/FilfanNew/large/GreenEys_24.jpg" alt="Client 3">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>sohailaelnagdy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+201080351332</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Assiut</h4>
+                            <p>Assiut</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 SOSO. All rights reserved.</p>
+                <p>Designed & Built with ENG SOSO 🤍.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="darkmode.js"></script>
