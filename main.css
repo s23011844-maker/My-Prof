@@ -882,6 +882,74 @@ section {
     transform: translateY(-3px);
 }
 
+/* =========================================
+   Social Media Pulsing Animations
+========================================= */
+
+/* 1. واتساب (نبض وتوهج أخضر) */
+.social-link.whatsapp {
+    animation: pulse-whatsapp 2s infinite;
+}
+.social-link.whatsapp:hover {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    animation: none;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+}
+
+@keyframes pulse-whatsapp {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* 2. لينكد إن (نبض وتوهج أزرق) */
+.social-link.linkedin {
+    animation: pulse-linkedin 2s infinite 0.3s; 
+}
+.social-link.linkedin:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    animation: none;
+    box-shadow: 0 10px 20px rgba(0, 119, 181, 0.4);
+}
+
+@keyframes pulse-linkedin {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 119, 181, 0.6); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 119, 181, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 119, 181, 0); }
+}
+
+/* 3. جيت هاب (نبض وتوهج يناسب الوضعين الفاتح والمظلم) */
+.social-link.github {
+    animation: pulse-github 2s infinite 0.6s;
+}
+.social-link.github:hover {
+    background-color: #333;
+    border-color: #333;
+    color: white;
+    transform: translateY(-5px) scale(1.1);
+    animation: none;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.4);
+}
+
+[data-theme="dark"] .social-link.github:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #111827;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulse-github {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(110, 84, 148, 0.5); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(110, 84, 148, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(110, 84, 148, 0); }
+}
+
 .contact-form {
     background: var(--bg-primary);
     padding: 2rem;
