@@ -1131,3 +1131,55 @@ section {
         font-size: 1.6rem;
     }
 }
+/* =========================================
+   Floating WhatsApp Button
+========================================= */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; /* المسافة من الأسفل */
+    right: 30px; /* المسافة من اليمين - يمكنك تغييرها إلى left إذا أردته يساراً */
+    width: 65px;
+    height: 65px;
+    background-color: #25D366; /* لون واتساب الأخضر */
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px; /* حجم الأيقونة */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* لضمان ظهوره فوق كل شيء */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    animation: floating-pulse-whatsapp 2s infinite; /* تشغيل أنيميشن النبض */
+}
+
+/* تأثير عند الوقوف عليه بالماوس */
+.floating-whatsapp:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #FFF;
+}
+
+/* أنيميشن النبض الخاص بالزر العائم */
+@keyframes floating-pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* تصغير الزر قليلاً في شاشات الموبايل */
+@media (max-width: 768px) {
+    .floating-whatsapp {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+}
