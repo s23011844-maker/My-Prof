@@ -48,7 +48,9 @@ body {
     padding: 0 1rem;
 }
 
-/* Navigation */
+/* =========================================
+   Navigation
+========================================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -163,7 +165,9 @@ body {
     }
 }
 
-/* Hero Section */
+/* =========================================
+   Hero Section
+========================================= */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -309,7 +313,9 @@ body {
     }
 }
 
-/* Buttons */
+/* =========================================
+   Buttons & Section Globals
+========================================= */
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -346,7 +352,6 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* Section Styles */
 section {
     padding: 5rem 0;
 }
@@ -381,7 +386,9 @@ section {
     color: var(--text-secondary);
 }
 
-/* About Section */
+/* =========================================
+   About Section
+========================================= */
 .about {
     background: var(--bg-secondary);
 }
@@ -432,7 +439,9 @@ section {
     font-weight: 500;
 }
 
-/* Skills Section */
+/* =========================================
+   Skills Section
+========================================= */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -488,9 +497,9 @@ section {
     color: var(--primary-color);
 }
 
-/* =========================
-   FUTURISTIC PROJECT CARDS
-========================= */
+/* =========================================
+   Projects Section (Futuristic Cards)
+========================================= */
 .projects {
     background: #0b0f1a;
     position: relative;
@@ -652,7 +661,9 @@ section {
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 240, 255, 0.2);
 }
 
-/* Timeline Section */
+/* =========================================
+   Timeline Section
+========================================= */
 .timeline-container {
     position: relative;
     max-width: 800px;
@@ -733,7 +744,9 @@ section {
     line-height: 1.6;
 }
 
-/* Testimonials Section */
+/* =========================================
+   Testimonials Section
+========================================= */
 .testimonials {
     background: var(--bg-secondary);
 }
@@ -817,7 +830,9 @@ section {
     background: var(--primary-color);
 }
 
-/* Contact Section */
+/* =========================================
+   Contact Section
+========================================= */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -885,8 +900,6 @@ section {
 /* =========================================
    Social Media Pulsing Animations
 ========================================= */
-
-/* 1. واتساب (نبض وتوهج أخضر) */
 .social-link.whatsapp {
     animation: pulse-whatsapp 2s infinite;
 }
@@ -905,7 +918,6 @@ section {
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* 2. لينكد إن (نبض وتوهج أزرق) */
 .social-link.linkedin {
     animation: pulse-linkedin 2s infinite 0.3s; 
 }
@@ -924,7 +936,6 @@ section {
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 119, 181, 0); }
 }
 
-/* 3. جيت هاب (نبض وتوهج يناسب الوضعين الفاتح والمظلم) */
 .social-link.github {
     animation: pulse-github 2s infinite 0.6s;
 }
@@ -985,7 +996,9 @@ section {
     min-height: 120px;
 }
 
-/* Footer */
+/* =========================================
+   Footer
+========================================= */
 .footer {
     background: var(--bg-secondary);
     padding: 2rem 0;
@@ -998,7 +1011,9 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Animations */
+/* =========================================
+   Animations
+========================================= */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -1030,15 +1045,53 @@ section {
 }
 
 /* =========================================
-   تنسيقات الموبايل (Responsive Design)
+   Floating WhatsApp Button
+========================================= */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px; 
+    width: 65px;
+    height: 65px;
+    background-color: #25D366; 
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px; 
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999; 
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    animation: floating-pulse-whatsapp 2s infinite; 
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #FFF;
+}
+
+@keyframes floating-pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* =========================================
+   Responsive Design (Mobile & Tablets)
 ========================================= */
 @media (max-width: 768px) {
-    /* Navbar */
     .nav-toggle {
         display: flex;
     }
 
-    /* 👇 هنا التعديل الأخير الخاص بالقائمة لتغطي الشاشة وتتوزع بشكل أفضل 👇 */
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -1062,7 +1115,6 @@ section {
         opacity: 1;
     }
 
-    /* Hero Section */
     .hero-container {
         padding-top: 4rem;
     }
@@ -1085,7 +1137,6 @@ section {
         padding: 0 1rem;
     }
 
-    /* Sections */
     .about-content, 
     .contact-content {
         grid-template-columns: 1fr;
@@ -1098,7 +1149,6 @@ section {
         justify-content: center;
     }
 
-    /* Timeline */
     .timeline-container::before {
         left: 0;
     }
@@ -1121,6 +1171,14 @@ section {
         margin: 1rem 0 0 0;
         text-align: left;
     }
+
+    .floating-whatsapp {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1129,57 +1187,5 @@ section {
     }
     .hero-title .typing {
         font-size: 1.6rem;
-    }
-}
-/* =========================================
-   Floating WhatsApp Button
-========================================= */
-.floating-whatsapp {
-    position: fixed;
-    bottom: 30px; /* المسافة من الأسفل */
-    right: 30px; /* المسافة من اليمين - يمكنك تغييرها إلى left إذا أردته يساراً */
-    width: 65px;
-    height: 65px;
-    background-color: #25D366; /* لون واتساب الأخضر */
-    color: #FFF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px; /* حجم الأيقونة */
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
-    z-index: 9999; /* لضمان ظهوره فوق كل شيء */
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    animation: floating-pulse-whatsapp 2s infinite; /* تشغيل أنيميشن النبض */
-}
-
-/* تأثير عند الوقوف عليه بالماوس */
-.floating-whatsapp:hover {
-    transform: translateY(-5px) scale(1.1);
-    color: #FFF;
-}
-
-/* أنيميشن النبض الخاص بالزر العائم */
-@keyframes floating-pulse-whatsapp {
-    0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    }
-}
-
-/* تصغير الزر قليلاً في شاشات الموبايل */
-@media (max-width: 768px) {
-    .floating-whatsapp {
-        width: 55px;
-        height: 55px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 30px;
     }
 }
