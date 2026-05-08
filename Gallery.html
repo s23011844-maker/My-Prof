@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Google Font for a modern, elegant look */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Cards Fade In Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Staggered Delay for Cards */
+        .card-animate:nth-child(1) { animation: fadeInUp 0.8s ease-out 0.1s both; }
+        .card-animate:nth-child(2) { animation: fadeInUp 0.8s ease-out 0.3s both; }
+        .card-animate:nth-child(3) { animation: fadeInUp 0.8s ease-out 0.5s both; }
+
+        /* Background Blob Animation */
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-200 via-purple-100 to-rose-200 relative overflow-x-hidden pb-16">
+
+    <div class="absolute top-0 right-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob pointer-events-none"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-2000 pointer-events-none"></div>
+    <div class="absolute -bottom-8 left-1/2 w-72 h-72 bg-rose-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-16">
+        
+        <div class="text-center mb-16" style="animation: fadeInUp 0.8s ease-out;">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 mb-4 drop-shadow-sm">
+                My Achievements & Certificates 🌸
+            </h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto font-medium">
+                Small steps lead to big successes... Here I share my journey of learning and growth.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="card-animate relative group rounded-3xl p-1 cursor-pointer">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-300 to-purple-300 rounded-3xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                <div class="relative h-full bg-white/40 backdrop-blur-xl border border-white/60 shadow-xl group-hover:shadow-2xl rounded-3xl p-5 flex flex-col justify-between transition-all duration-300 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600&q=80" alt="Certificate 1" class="w-full h-48 object-cover rounded-2xl transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">AI Fundamentals</h3>
+                        <p class="text-pink-600 font-medium text-sm mb-3">Google</p>
+                        <span class="inline-block px-4 py-1 bg-white/60 text-purple-700 text-xs font-bold rounded-full border border-purple-200">
+                            February 2026
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animate relative group rounded-3xl p-1 cursor-pointer">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-300 to-purple-300 rounded-3xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                <div class="relative h-full bg-white/40 backdrop-blur-xl border border-white/60 shadow-xl group-hover:shadow-2xl rounded-3xl p-5 flex flex-col justify-between transition-all duration-300 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Certificate 2" class="w-full h-48 object-cover rounded-2xl transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Front-End Development</h3>
+                        <p class="text-pink-600 font-medium text-sm mb-3">Coursera</p>
+                        <span class="inline-block px-4 py-1 bg-white/60 text-purple-700 text-xs font-bold rounded-full border border-purple-200">
+                            March 2026
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animate relative group rounded-3xl p-1 cursor-pointer">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-300 to-purple-300 rounded-3xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                <div class="relative h-full bg-white/40 backdrop-blur-xl border border-white/60 shadow-xl group-hover:shadow-2xl rounded-3xl p-5 flex flex-col justify-between transition-all duration-300 transform group-hover:-translate-y-2 group-hover:scale-[1.02]">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1589330694653-06dfa16194b3?w=600&q=80" alt="Certificate 3" class="w-full h-48 object-cover rounded-2xl transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Software Testing (ISTQB)</h3>
+                        <p class="text-pink-600 font-medium text-sm mb-3">Software Engineering Institute</p>
+                        <span class="inline-block px-4 py-1 bg-white/60 text-purple-700 text-xs font-bold rounded-full border border-purple-200">
+                            April 2026
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
